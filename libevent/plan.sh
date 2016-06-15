@@ -11,10 +11,3 @@ pkg_build_deps=(core/cacerts core/gcc core/make)
 pkg_bin_dirs=(bin)
 pkg_include_dirs=(include)
 pkg_lib_dirs=(lib)
-pkg_svc_run="bin/memcached"
-pkg_expose=(11211)
-
-do_build() {
-  ./configure
-  make
-}
